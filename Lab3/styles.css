@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
 /*Cambio e body*/
 body {
     margin: 0 auto;
@@ -13,84 +14,89 @@ body {
 /*Cambiar estilos de encabezados 1 (headers 1)*/
 h1 {
     font-size: 2.5em;
-  font-weight: 300;
-  }
+    font-weight: 300;
+}
 
 /*Cambiar estilos de encabezados 2 (headers 2)*/
 h2 {
     margin-top: 1em;
     padding-top: 1em;
-  }
+}
 
-  /*Cambiar estilos de encabezados 3 (headers 3)*/
- h3{
+/*Cambiar estilos de encabezados 3 (headers 3)*/
+h3 {
     color: rgb(73, 73, 73);
     margin-top: 1em;
     padding-top: 1em;
-  }
+}
 
-  /*Estilo a parrafos y listas*/
-p, li {
+/*Estilo a parrafos y listas*/
+p,
+li {
     font-size: 13.5px;
     line-height: 2;
     letter-spacing: 1px;
-  }
+}
+
 /*Detalles para encabezados 1, 2 y palabras con strong*/
-  h1,h2,strong {
+h1,
+h2,
+strong {
     color: #333;
-  }
+}
 
 /*Balanceo de la pagina*/
-  code,
+code,
 pre {
-  background: #eee;
+    background: #eee;
 }
 
 code {
-  padding: 2px 4px;
-  vertical-align: text-bottom;
+    padding: 2px 4px;
+    vertical-align: text-bottom;
 }
 
 pre {
-  padding: 1em;
+    padding: 1em;
 }
 
 /*Cambiar color de hipervinculos*/
 a {
     color: #e81c4f;
-  }
+}
 
-  /*Colores secundarios*/
-  body {
+/*Colores secundarios*/
+body {
     color: #566b78;
-  }
-  
-  code,
-  pre {
+}
+
+code,
+pre {
     background: #f5f7f9;
     border-bottom: 1px solid #d8dee9;
     color: #a7adba;
-  }
-  
-  pre {
+}
+
+pre {
     border-left: 2px solid #69c;
-  }
-  
+}
+
 /*Poner una imagen a la pagina body*/
-  body {
+body {
     height: 1500px;
     background: url(https://www.brainpickings.org/wp-content/themes/brainpickings/images/bckgd_body.png);
-  }
-  
+}
+
 /*Poner imagen al footer y aside*/
-  footer,aside {
+footer,
+aside {
     background-color: #cfcfcf;
 }
 
 
 
-  /*Poner estilo solo a los hipervinculos del header*/
-  header a {
+/*Poner estilo solo a los hipervinculos del header*/
+header a {
     border: 1px solid #e81c4f;
     border-radius: 290486px;
     color: white;
@@ -101,10 +107,22 @@ a {
     text-decoration: none;
     transition: none 200ms ease-out;
     transition-property: color, background;
-  }
-  
-  /*Funcion de pasar el mouse por encima*/
-  header a:hover {
-    background:  #e81c4f;
+}
+
+/*Funcion de pasar el mouse por encima (header=selector general) (a:hover=selector de pseudoclase)*/
+header a:hover {
+    background: #e81c4f;
     color: white;
-  }
+}
+
+/*Clase referencias (Selector de clase)*/
+.referencias {
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Selector de id*/
+#tituloFormulario{
+
+    color: cadetblue;
+}
