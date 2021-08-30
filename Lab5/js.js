@@ -30,7 +30,7 @@ window.alert("Esto es una alerta de comida");
 const comida = window.prompt("¿Cual es tu comida favorita");
 console.info("La comida favorita del usuario es: " + comida);
 
-const respuesta=window.confirm("¿Tienes mucha hambre");
+const respuesta=window.confirm("¿Tienes mucha hambre?");
 
 if (respuesta){
       console.warn("Vamos a comer " + comida + " ahora");

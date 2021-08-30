@@ -5,12 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laboratorio 5: JavaScript
+    <title>Laboratorio 6: Programación orientado a eventos
     </title>
-
 </head>
 
 <body>
+    <h1 id="titulo_menu" onmouseover="colorea_azul()" onmouseleave="colorea_verde()"> Ménu de comida</h1>
+    <button id="boton_menu">Mostrar menu</button>
+    
+    <div id="platillos"></div>
+
+    <p>¿Que quieres comer?</p>
+    <input type="text" name="comida" id="comida">
+    <div id="respuesta"></div>
+
     <header>
         <center>
             <h1>David Alejandro Polo Rivero <br> Matricula: A01700769 <br>Correo: <a
@@ -32,21 +40,35 @@
             <article>
                 <h2>
                     Cuestionario</h2>
-                <h3>• ¿Cuál es la diferencia entre Internet y la World Wide Web?</h3>
-                <p>Internet es una red inmensa de computadoras alrededor del mundo conectadas entre sí. La WEB es una
-                    <h3>Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS? </h3>
-                    <p>Mi recomendacion para el uso de !important es que debe ir siempre al final de la declaración, es
-                        decir, inmediatamente antes del punto y como finales.</p>
-                    <h3>Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado?</h3>
-                    <p>Porque esta puede afectar de manera visual al lector de nuestra página, impactando principamente
-                        en el número de visitas.</p>
-                    <h3>Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de un propiedad de
-                        estilo entre %, px y pt?</h3>
-                    <p>Que todas las unidades de nuestra página tengan las misma unidades de medida, para tener un mejor
-                        control de espacio de nuestra página.</p>
-                    <h3>¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?</h3>
-                    <p>Ya que se tendran menor número de lineas de código para que el motor, impactando en la respuesta
-                        y velocidad de carga de los elementos y de la página en general.</p>
+                <h3>¿Qué diferencias y semejanzas hay entre Java y JavaScript?</h3>
+                <p>
+                    <ul>
+                        <li>Java crea aplicaciones que tra ser compiladas se pueden ejecutar en navegadores a traves de
+                            una maquina virtual, mientras que JavaScript se ejecuta nativamente en los navegadores.
+                        </li>
+                        <li>Java es un lenguaje fuertemente tipado y JavaScript es debilmente tipado.</li>
+                        <li>Java es un lenguaje de programación orientado a objetos puramente, mientras que JavaScript
+                            es basado en prototipos.</li>
+                    </ul>
+                </p>
+                <h3>¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)</h3>
+                <p>
+                    <img src="metodo date.PNG">
+                </p>
+                <h3>¿Qué métodos tienen los arreglos? (Menciona al menos 5*)</h3>
+                <p>
+                    Método length, toString(), Stack, Shift, Unshift, etc...
+                </p>
+                <h3>¿Cómo se declara una variable con alcance local dentro de una función?</h3>
+                <p>
+                    let + nombredelaVariable.
+                </p>
+                <h3>¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</h3>
+                <p>Tienes que tener cuidado en que las variables globales pueden seguir afectando al código.</p>
+                <h3>¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para qué
+                    podrías utilizar esto en una aplicación web?</h3>
+                <p>El método match() y se podria usar para buscar ocurrencias dentro de la página web.</p>
+
             </article>
             <article>
                 <h2>Bibliografía</h2>
@@ -83,7 +105,8 @@
     <footer>
         <center>Editor usado:<a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></center>
     </footer>
-    <script src="js.js"></script>
+    <script src="poe.js"></script>
+
 </body>
 
 </html>
