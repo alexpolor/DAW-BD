@@ -104,12 +104,35 @@ function ejer5() {
         inv = inv * 10 + (rest % 10);
         rest = Math.floor(rest / 10);
     } while (rest > 0)
-    console.log("Tu número es:     " + numInv + "\nNúmero invertido: " + inv);
+    alert("Tu número es:     " + numInv + "\nNúmero invertido: " + inv);
 
 }
 
+//Ejercicio extra
+function Carro(marca, año, precioCompra) {
+    this.marca = marca;
+    this.año = año;
+    this.precioCompra = precioCompra;
+};
+
 function extra() {
 
+    var precioFinal;
+    let marcaU = prompt("Da la MARCA de tu carro: ");
+    let añoU = prompt("Da AÑO de compra: ");
+    let precioCompraU = prompt("Da el PRECIO de compra: ");
+    var carro1 = new Carro(marcaU, añoU, precioCompraU);
+    //Obtener año actual
+    var today = new Date();
+    var añoActual = today.getFullYear();
+    var añoFinal = añoActual - carro1.año;
 
+    precioFinal = carro1.precioCompra - (carro1.precioCompra * 0.2682);
+
+    for (i = 0; i < añoFinal; i++) {
+        precioFinal = precioFinal - (precioFinal * 0.10);
+    }
+    document.getElementById("carroDepre").innerHTML = "|Precio de tu carro|<br>Marca:" + carro1.marca + "<br>Año de compra: " + carro1.año + "<br>Precio Actual: $" + precioFinal.toLocaleString('en-US');
+    console.log(precioFinal);
 
 }

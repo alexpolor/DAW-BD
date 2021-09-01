@@ -110,6 +110,110 @@ header a:hover {
     color: #2b4041
 }
 
-#ejer1 {
-    color: darkgreen;
+#ejer_1 {
+    border: 1px solid #e81c4f;
+    border-radius: 290486px;
+    color: #fff;
+    font-size: .6em;
+    letter-spacing: .2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none .2s ease-out;
+    transition-property: color, background
+}
+
+#ejer_1:hover {
+    background: #e81c4f;
+    color: #fff
+}
+
+#ejer_2 {
+    border: 1px solid #e81c4f;
+    border-radius: 290486px;
+    color: #fff;
+    font-size: .6em;
+    letter-spacing: .2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none .2s ease-out;
+    transition-property: color, background
+}
+
+#ejer_2:hover {
+    background: #e81c4f;
+    color: #fff
+}
+
+#ejer_3 {
+    border: 1px solid #e81c4f;
+    border-radius: 290486px;
+    color: #fff;
+    font-size: .6em;
+    letter-spacing: .2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none .2s ease-out;
+    transition-property: color, background
+}
+
+#ejer_3:hover {
+    background: #e81c4f;
+    color: #fff
+}
+
+#ejer_4 {
+    border: 1px solid #e81c4f;
+    border-radius: 290486px;
+    color: #fff;
+    font-size: .6em;
+    letter-spacing: .2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none .2s ease-out;
+    transition-property: color, background
+}
+
+#ejer_4:hover {
+    background: #e81c4f;
+    color: #fff
+}
+
+#ejer_5 {
+    border: 1px solid #e81c4f;
+    border-radius: 290486px;
+    color: #fff;
+    font-size: .6em;
+    letter-spacing: .2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none .2s ease-out;
+    transition-property: color, background
+}
+
+#ejer_5:hover {
+    background: #e81c4f;
+    color: #fff
+}
+
+#extra {
+    border: 1px solid #e81c4f;
+    border-radius: 290486px;
+    color: #fff;
+    font-size: .6em;
+    letter-spacing: .2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none .2s ease-out;
+    transition-property: color, background
+}
+
+#extra:hover {
+    background: #e81c4f;
+    color: #fff
 }
