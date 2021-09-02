@@ -55,7 +55,7 @@ function buscar_platillo(platillo_a_buscar){
 
 
 //para boton
-document.getElementById("boton_menu").onclick=muestra_platillos;
+/*document.getElementById("boton_menu").onclick=muestra_platillos;
 
 //para boton
-document.getElementById("comida").onkeyup=buscar_platillo;
+document.getElementById("comida").onkeyup=buscar_platillo;*/

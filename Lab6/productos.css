@@ -126,3 +126,32 @@ header a:hover {
     
 }
 
+  img{
+    width: 200px; height: 200px;
+  }
+
+  section.muestraPagar {
+    border: 1px solid #e81c4f;
+    border-radius: 290486px;
+    float: right;
+    font-size: .6em;
+    letter-spacing: .2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none .2s ease-out;
+    transition-property: color, background
+}
+
+.perfumes{
+    border: 1px solid #e81c4f;
+    border-radius: 12px;
+    float:left;
+    font-size: .6em;
+    letter-spacing: .2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none .2s ease-out;
+    transition-property: color, background
+}
