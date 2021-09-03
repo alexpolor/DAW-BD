@@ -23,37 +23,48 @@
     </header>
     <main><br><br>
         <section>
-            <div class="perfumes">
-                <p id="oneMillion">
-                    <img src="million.png">
+            <form id="form">
+                <div class="perfumes">
+                    <p id="oneMillion">
+
+                        <img src="million.png">
                     <div id="oneDescripcion"></div>
-                    <input type="number" name="stockOneMillion" id="stockOneMillion" min="1" max="10" step="any" placeholder="Unidades a comprar">
-                </p>
+                    <input type="number" name="stockOneMillion" id="stockOneMillion" min="0" max="100" step="any"
+                        placeholder="Unidades a comprar">
 
-                <p id="bossIntense">
-                    <img src="boss.png">
+                    </p>
+
+                    <p id="bossIntense">
+                        <img src="boss.png">
                     <div id="bossDescripcion"></div>
-                    <input type="number" name="" id="stockBossIntense" min="1" max="10" step="any" placeholder="Unidades a comprar">
-                </p>
-               
-                <p id="invictus">
-                    <img src="invictus.png">
+                    <input type="number" name="" id="stockBossIntense" min="0" max="100" step="any"
+                        placeholder="Unidades a comprar">
+                    </p>
+
+                    <p id="invictus">
+                        <img src="invictus.png">
                     <div id="invictusDescripcion"></div>
-                    <input type="number" name="stockInvictus" id="stockInvictus" min="1" max="10" step="any" placeholder="Unidades a comprar">
-                </p>
+                    <input type="number" name="" id="stockInvictus" min="0" max="100" step="any"
+                        placeholder="Unidades a comprar">
+                    </p>
+                    <br>
+                    <button type="submit" id="botonComprar">Comprar</button>
+                </div>
 
-            </div>
+            </form>
         </section>
 
-        <section class="muestraPagar">
-            Total a pagar
+        <section id="pagar">
+            <form id="formPagar">
+            <h1>Total a pagar</h1>
+            <div id="descripcion"></div>
+             <br>
+            <button type="submit" id="botonPagar">Pagar</button>
+        </form>
+        <div id="verificando"></div>
+
 
         </section>
-
-
-
-
-
 
     </main>
     <footer>

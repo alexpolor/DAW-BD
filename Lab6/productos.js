@@ -1,10 +1,15 @@
+const formularioPedidos= document.getElementById("form");
+const pagar =document.getElementById("formPagar");
 const pedidoMillion = document.getElementById('stockOneMillion');
 const pedidoBoss = document.getElementById('stockBossIntense');
 const pedidoInvictus = document.getElementById('stockInvictus');
+formularioPedidos.addEventListener("submit",pruebaStock);
+pagar.addEventListener("submit",pruebaBotonPagar);
 
 
-function Perfume(id,nombre,marca,volumen, precio,stock) {
-    this. id= id;
+
+function Perfume(id, nombre, marca, volumen, precio, stock) {
+    this.id = id;
     this.nombre = nombre;
     this.marca = marca;
     this.volumen = volumen;
@@ -12,15 +17,62 @@ function Perfume(id,nombre,marca,volumen, precio,stock) {
     this.stock = stock;
 };
 
-var oneMillion= new Perfume(1,'One Million','Paco Rabbane',100,1340,10);
-var bossIntense= new Perfume(2,'Bottled Intense','Hugo Boss',100,1299,10);
-var invictus= new Perfume(3,'Invictus','Paco Rabbane',100,1420,10);
+var oneMillion = new Perfume(1, 'One Million', 'Paco Rabbane', 100, 1340, 5);
+var bossIntense = new Perfume(2, 'Bottled Intense', 'Hugo Boss', 100, 1299, 5);
+var invictus = new Perfume(3, 'Invictus', 'Paco Rabbane', 100, 1420, 5);
 
-document.getElementById("oneDescripcion").innerHTML = "Nombre: " + oneMillion.nombre + "<br>Marca: " + oneMillion.marca + "<br>Precio: $" + oneMillion.precio.toLocaleString('en-US');
-document.getElementById("bossDescripcion").innerHTML = "Nombre: " + bossIntense.nombre + "<br>Marca: " + bossIntense.marca + "<br>Precio: $" + bossIntense.precio.toLocaleString('en-US');
-document.getElementById("invictusDescripcion").innerHTML = "Nombre: " + invictus.nombre + "<br>Marca: " + invictus.marca + "<br>Precio: $" + invictus.precio.toLocaleString('en-US');
+document.getElementById("oneDescripcion").innerHTML = "Nombre: " + oneMillion.nombre + "<br>Marca: " + oneMillion.marca + "<br>Volumen: " + oneMillion.volumen + "ml<br>Precio: $" + oneMillion.precio.toLocaleString('en-US')+ "<br>Existencia: " +oneMillion.stock;
+document.getElementById("bossDescripcion").innerHTML = "Nombre: " + bossIntense.nombre + "<br>Marca: " + bossIntense.marca + "<br>Volumen: " + bossIntense.volumen +"ml<br>Precio: $" + bossIntense.precio.toLocaleString('en-US')+ "<br>Existencia: " +bossIntense.stock;
+document.getElementById("invictusDescripcion").innerHTML = "Nombre: " + invictus.nombre + "<br>Marca: " + invictus.marca + "<br>Volumen: " + invictus.volumen + "ml<br>Precio: $" + invictus.precio.toLocaleString('en-US')+ "<br>Existencia: " +invictus.stock ;
 
-function pruebaStock (){
-prueba= oneMillion.stock - pedidoBoss;
-console.log(prueba);
+//Siempre poner event
+function pruebaStock(event) {
+    //Evita que refresque la pagina
+    event.preventDefault();
+    existencias();
+    calculoTotal(oneMillion.precio,bossIntense.precio,invictus.precio);
+    
+
 }
+
+function existencias(){
+    if(pedidoMillion.value>oneMillion.stock){
+        alert( ""+oneMillion.nombre+" de " +oneMillion.marca+ ", cantidad insuficiente");
+    }
+
+    if(pedidoBoss.value>bossIntense.stock){
+        alert( ""+bossIntense.nombre+" de " +bossIntense.marca+ ", cantidad insuficiente");
+    }
+
+    if(pedidoInvictus.value>invictus.stock){
+        alert( ""+invictus.nombre+" de " +invictus.marca+ ", cantidad insuficiente");
+    }
+
+}
+
+function calculoTotal(a,b,c){
+    var iva=0;
+    var subTotal=0;
+    var total=0;
+    var unidades;
+    let uniMillion=pedidoMillion.value;
+    let uniBoss=pedidoBoss.value;
+    let uniInvictus=pedidoInvictus.value;
+
+    unidades= uniMillion + uniBoss + uniInvictus;
+    subTotal=(a*pedidoMillion.value)+(b*pedidoBoss.value)+(c*pedidoInvictus.value);
+    iva=subTotal*0.16;
+    total=subTotal+iva;
+
+    document.getElementById("descripcion").innerHTML="Subtotal------->$" +subTotal.toLocaleString('en-US')+ "<br>IVA---------------->$"+iva.toLocaleString('en-US')+ "<br>Total------------>$"+total.toLocaleString('en-US');
+    
+    
+}
+
+
+function pruebaBotonPagar(event){
+    
+    alert("Gracias por tu compra");
+   
+}
+
