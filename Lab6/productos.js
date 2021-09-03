@@ -29,25 +29,17 @@ document.getElementById("invictusDescripcion").innerHTML = "Nombre: " + invictus
 function pruebaStock(event) {
     //Evita que refresque la pagina
     event.preventDefault();
-    existencias();
+    if(existencias()==false){
+        alert("Verifique pedido, stock insufuciente");
+    }else{
     calculoTotal(oneMillion.precio,bossIntense.precio,invictus.precio);
-    
-
+    }
 }
 
 function existencias(){
-    if(pedidoMillion.value>oneMillion.stock){
-        alert( ""+oneMillion.nombre+" de " +oneMillion.marca+ ", cantidad insuficiente");
+    if(pedidoMillion.value>oneMillion.stock || pedidoBoss.value>bossIntense.stock || pedidoInvictus.value>invictus.stock ){
+        return false;
     }
-
-    if(pedidoBoss.value>bossIntense.stock){
-        alert( ""+bossIntense.nombre+" de " +bossIntense.marca+ ", cantidad insuficiente");
-    }
-
-    if(pedidoInvictus.value>invictus.stock){
-        alert( ""+invictus.nombre+" de " +invictus.marca+ ", cantidad insuficiente");
-    }
-
 }
 
 function calculoTotal(a,b,c){
