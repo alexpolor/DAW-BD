@@ -1,8 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
+
 html {
     min-height: 100%;
     position: relative;
-  }
+}
+
 body {
     margin: 0 auto;
     max-width: 50em;
@@ -12,7 +14,7 @@ body {
     color: #272727;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 h1 {
@@ -118,19 +120,20 @@ header a:hover {
     color: #2b4041
 }
 
-.boton{
+.boton {
     height: 650px;
-    
+
     justify-content: center;
     align-content: center;
-    
+
 }
 
-  img{
-    width: 200px; height: 200px;
-  }
+img {
+    width: 200px;
+    height: 200px;
+}
 
-  section#pagar {
+section#pagar {
     border: 1px solid #e81c4f;
     border-radius: 12px;
     float: right;
@@ -142,7 +145,8 @@ header a:hover {
     transition: none .2s ease-out;
     transition-property: color, background
 }
-#botonComprar{
+
+#botonComprar {
     border: 1px solid #e81c4f;
     border-radius: 290486px;
     float: right;
@@ -153,7 +157,7 @@ header a:hover {
     text-decoration: none;
     transition: none .2s ease-out;
     transition-property: color, background;
-    font-size: medium; 
+    font-size: medium;
     position: relative;
     width: 100%;
 }
@@ -163,7 +167,7 @@ header a:hover {
     color: #fff
 }
 
-#botonPagar{
+#botonPagar {
     border: 1px solid #e81c4f;
     border-radius: 290486px;
     float: right;
@@ -174,10 +178,10 @@ header a:hover {
     text-decoration: none;
     transition: none .2s ease-out;
     transition-property: color, background;
-    font-size: medium; 
+    font-size: medium;
     position: relative;
     width: 100%;
-    
+
 }
 
 #botonPagar:hover {
@@ -185,10 +189,10 @@ header a:hover {
     color: #fff
 }
 
-.perfumes{
+.perfumes {
     border: 1px solid #e81c4f;
     border-radius: 12px;
-    float:left;
+    float: left;
     font-size: .6em;
     letter-spacing: .2em;
     padding: 1em 2em;
@@ -196,4 +200,8 @@ header a:hover {
     text-decoration: none;
     transition: none .2s ease-out;
     transition-property: color, background
+}
+
+#descripcion {
+    font-size: medium;
 }
