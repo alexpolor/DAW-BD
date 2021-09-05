@@ -8,7 +8,7 @@
 
 # Laboratorios
 
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+![](https://github.com/alexpolor/DAW-BD/blob/main/Lab1/dapr%20logo.png)
 ## Laboratorio 1: HTML5
 - Introducción a las aplicaciones web, HTML5 y ciclo de vida de los sistemas de información
 ## Laboratorio 2: GIT + GITHUB
