@@ -63,7 +63,7 @@ function calculoTotal(a, b, c) {
 
 
 function pruebaBotonPagar(event) {
-
-    alert("Gracias por tu compra");
+    
+   alert("Gracias por tu compra");
 
 }
