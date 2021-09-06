@@ -27,7 +27,7 @@
 # Links
 
 
-`<link>` : https://github.com/alexpolor
+`<GitHub User>` : https://github.com/alexpolor
 
 
 
