@@ -3,7 +3,7 @@
 #### ITESM QRO
 
 
-- Repositorio dedicado a subir los laboratorio del bloque DAW + BD.
+- Repositorio dedicado a subir los laboratorios del bloque DAW + BD.
 
 
 # Laboratorios
