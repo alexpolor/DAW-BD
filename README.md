@@ -23,6 +23,12 @@
 - En esta actividad se abordará el paradigma de programación orientada a eventos.
 ## Laboratorio 7: Front-end Frameworks (Bootstrap 5)
 - En esta actividad exploraremos algunos de los frameworks para desarrollo de Front-end de aplicaciones web, y aprenderás a usar uno de estos frameworks para mejorar la experiencia del usuario.
+## Laboratorio 8: Bases de Datos de Escritorio (MS Access)
+- Uso de Access para actividades de base de datos
+## Laboratorio 9: Introducción al back-end
+- En esta actividad haremos una introducción al desarrollo en el back-end con node.
+
+
 
 # Links
 
