@@ -1,0 +1,29 @@
+{
+  "name": "daw_bd",
+  "version": "1.0.0",
+  "description": "Laboratorios del bloque 1 ago-dic 2021",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexpolor/DAW-BD.git"
+  },
+  "keywords": [
+    "daw"
+  ],
+  "author": "David Alejandro Polo Rivero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexpolor/DAW-BD/issues"
+  },
+  "homepage": "https://github.com/alexpolor/DAW-BD#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
