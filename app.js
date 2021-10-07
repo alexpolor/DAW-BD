@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
 
 //Middleware
 app.use(bodyParser.urlencoded({extended: false}));
@@ -7,6 +8,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use('/alguna-ruta', (request, response, next) => {
     console.log(request.body);
 });
+
+
 
 app.use((request,response, next) => {
     console.log("Primer Middleware");
