@@ -29,6 +29,8 @@
 - En esta actividad haremos una introducción al desarrollo en el back-end con node.
 ## Laboratorio 10: Rutas y formas
 -En esta actividad veremos cómo programar desde el servidor un módulo simple de ruteo y cómo mandarle datos al servidor.
+## Laboratorio 11: Conociendo el ambiente de MariaDB
+-En esta práctica conoceremos el ambiente en el que utilizaremos un DBMS (Database Management System) con alcance empresarial.
 
 # Links
 
