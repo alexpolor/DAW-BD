@@ -1,0 +1,45 @@
+INSERT INTO lugar (nombre_lugar)
+VALUES ('Centro turístico'),
+('Laboratorios'),
+('Restaurante'),
+('Centro operativo'),
+('Triceratops'),
+('Dilofosaurios'),
+('Velociraptors'),
+('TRex'),
+('Planicie de los herbívoros');
+
+
+INSERT INTO incidente(tipo_incidente)
+VALUES ('Falla eléctrica'),
+('Fuga de herbívoro'),
+('Fuga de Velociraptors'),
+('Fuga de TRex'),
+('Robo de ADN'),
+('Auto descompuesto'),
+('Visitantes en zona no autorizada');
+
+
+INSERT INTO lugar_incidente(id_lugar,id_incidente)
+VALUES (1,7),
+(5,2),
+(1,1),
+(5,6),
+(6,7),
+(9,5),
+(5,5);
+
+
+
+ALTER TABLE tblname AUTO_INCREMENT = 0;
+
+---------Consulta con nombres de lugar e incidentes-------------------
+
+SELECT id ,nombre_lugar, tipo_incidente, fecha_incidente
+from lugar_incidente LI,lugar l,incidente i
+WHERE li.id_lugar=l.id_lugar 
+and li.id_incidente=i.id_incidente
+ORDER by fecha_incidente DESC;
+
+SELECT id ,nombre_lugar, tipo_incidente, fecha_incidente from lugar_incidente LI,lugar l,incidente i WHERE li.id_lugar=l.id_lugar  and li.id_incidente=i.id_incidente ORDER by fecha_incidente DESC;
+
